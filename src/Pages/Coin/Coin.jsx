@@ -36,12 +36,10 @@ const Coin=() => {
         //     .catch(err => console.error(err));
 
 
-        
         axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${currency.name}&days=10&interval=daily`,options)
         .then(response => setHistorycalData(response.data))
         .catch(err => console.error(err));
         
-
     }
     
     useEffect(()=>{
@@ -66,9 +64,9 @@ const Coin=() => {
                 <li>Crypto Market Rank</li>
                 <li>{coinData.market_cap_rank}</li>
             </ul>
-            {/* <ul>
+            <ul>
                 <li>Current Price</li>
-                <li>{coinData.market_data.current_price
+                <li>{currency.Symbol}{coinData.market_data.current_price
                 [currency.name].toLocaleString()}</li>
             </ul>
             <ul>
@@ -83,9 +81,9 @@ const Coin=() => {
             </ul> 
             <ul>
                 <li>24 Hour low</li>
-                <li>{currency.Symbol} {coinData.market_data.high_24h
+                <li>{currency.Symbol} {coinData.market_data.low_24h
                     [currency.name].toLocaleString()}</li>
-            </ul>  */}
+            </ul> 
             <ul>
                 <li>Watchlist Portfolio Users</li>
                 <li>{coinData.watchlist_portfolio_users.toLocaleString()}</li>

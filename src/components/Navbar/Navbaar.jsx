@@ -1,8 +1,10 @@
 import React, { useContext } from 'react'
 import './Navbaar.css'
+import Logo from '../../assets/CryptoPoint_transparent.png'
 import arrow_icon from '../../assets/arrowsign.webp'
 import { CoinContext } from '../../context/Coincontext'
 import { Link } from 'react-router-dom'
+
 
 function Navbaar() {
 
@@ -31,7 +33,7 @@ function Navbaar() {
   return (
     <div className='navbaar'>
       <Link to={`/`}>
-        <p>₵ⱤɎ₱₮Ø₱Øł₦₮</p>
+        <p></p>
         </Link>
         <ul>
         <Link to={`/`}>
