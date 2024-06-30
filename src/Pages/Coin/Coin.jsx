@@ -66,7 +66,7 @@ const Coin=() => {
                 <li>Crypto Market Rank</li>
                 <li>{coinData.market_cap_rank}</li>
             </ul>
-            <ul>
+            {/* <ul>
                 <li>Current Price</li>
                 <li>{coinData.market_data.current_price
                 [currency.name].toLocaleString()}</li>
@@ -85,7 +85,7 @@ const Coin=() => {
                 <li>24 Hour low</li>
                 <li>{currency.Symbol} {coinData.market_data.high_24h
                     [currency.name].toLocaleString()}</li>
-            </ul> 
+            </ul>  */}
             <ul>
                 <li>Watchlist Portfolio Users</li>
                 <li>{coinData.watchlist_portfolio_users.toLocaleString()}</li>
