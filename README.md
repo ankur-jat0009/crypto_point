@@ -97,5 +97,3 @@ http://localhost:5173
 
 * GitHub: [ankur-jat0009](https://github.com/ankur-jat0009)
 * Portfolio / Live Project: [CryptoPoint](https://cryptopoint0009.netlify.app/)
-
-```
